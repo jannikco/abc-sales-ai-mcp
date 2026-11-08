@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "68012d85ca72042bcb2592d33bdcde919bcb0437addac07d8346a4851593991b",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://developers.abcsales.ai/openapi.yaml"
+  ],
+  "id": "abc-sales-ai-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "ABC Sales AI MCP setup and connection checker",
+  "description": "Generate ABC Sales AI MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "abc-sales-ai",
+  "appName": "ABC Sales AI",
+  "providerDocs": "https://developers.abcsales.ai/openapi.yaml",
+  "providerWebsite": "https://www.abcsales.ai/",
+  "authentication": {
+    "type": "bearer",
+    "requiredCredentialFields": [
+      "token"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://developers.abcsales.ai/getting-started/authentication",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-abc-sales-ai-mcp"
+}
