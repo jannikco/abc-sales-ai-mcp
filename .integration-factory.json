@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "68012d85ca72042bcb2592d33bdcde919bcb0437addac07d8346a4851593991b",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developers.abcsales.ai/openapi.yaml"
-  ],
   "id": "abc-sales-ai-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "ABC Sales AI MCP setup and connection checker",
-  "description": "Generate ABC Sales AI MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare ABC Sales AI for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-abc-sales-ai-mcp",
+  "sourceRevision": "155a6ba96cbe53ed66af9b841180afc243a0252b9cb7ed75e039f845ee9c969e",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developers.abcsales.ai/openapi.yaml"
+  ],
+  "utility": {
+    "problem": "Prepare ABC Sales AI and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "abc-sales-ai",
   "appName": "ABC Sales AI",
-  "providerDocs": "https://developers.abcsales.ai/openapi.yaml",
-  "providerWebsite": "https://www.abcsales.ai/",
-  "authentication": {
-    "type": "bearer",
-    "requiredCredentialFields": [
-      "token"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://developers.abcsales.ai/getting-started/authentication",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-abc-sales-ai-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }

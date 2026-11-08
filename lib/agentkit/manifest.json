@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-abc-sales-ai",
+      "description": "Connect AI agents to ABC Sales AI using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-abc-sales-ai/SKILL.md": "a7c4a811ddbd5206772caa1826659e4aef00d1cd3c0005a36a08a6f40629529b"
+  }
+}
